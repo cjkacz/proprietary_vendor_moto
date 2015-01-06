@@ -242,6 +242,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/etc/diag/mdm/FIT_V12.cfg:system/etc/diag/mdm/FIT_V12.cfg \
     vendor/moto/shamu/proprietary/etc/diag/mdm/sensors_qxdm.cfg:system/etc/diag/mdm/sensors_qxdm.cfg \
     vendor/moto/shamu/proprietary/etc/diag/sensors_qxdm.cfg:system/etc/diag/sensors_qxdm.cfg \
+    vendor/moto/shamu/proprietary/etc/diag/audio_voice_apr.cfg:system/etc/diag/audio_voice_apr.cfg \
     vendor/moto/shamu/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/moto/shamu/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/moto/shamu/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
@@ -340,6 +341,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/bin/radish:system/bin/radish \
     vendor/moto/shamu/proprietary/bin/tcmd_mini:system/bin/tcmd_mini \
     vendor/moto/shamu/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
+    vendor/moto/shamu/proprietary/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml \
     vendor/moto/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/moto/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/moto/shamu/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
@@ -388,6 +390,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/etc/firmware/vpu.mdt:system/etc/firmware/vpu.mdt \
     vendor/moto/shamu/proprietary/lib/librecoglib.so:system/lib/librecoglib.so \
     vendor/moto/shamu/proprietary/lib/libsupermodel.so:system/lib/libsupermodel.so \
+    vendor/moto/shamu/proprietary/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so \
     vendor/moto/shamu/proprietary/vendor/firmware/aonvr1.bin:system/vendor/firmware/aonvr1.bin \
     vendor/moto/shamu/proprietary/vendor/firmware/aonvr2.bin:system/vendor/firmware/aonvr2.bin \
     vendor/moto/shamu/proprietary/vendor/firmware/bcm20795_firmware.ncd:system/vendor/firmware/bcm20795_firmware.ncd \
