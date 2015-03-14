@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The Android Open Source Project
+# Copyright (C) 2015 The Purified Rom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,13 +18,17 @@ $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    TimeService \
-    TriggerEnroll \
-    TriggerTrainingService 
+    TimeService
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
     org.simalliance.openmobileapi
+
+# Prebuilt privileged APKs
+PRODUCT_PACKAGES += \
+    BuaContactAdapter \
+    TriggerEnroll \
+    TriggerTrainingService
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \

@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The Android Open Source Project
+# Copyright (C) 2015 The Purified Rom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/moto/shamu/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
     vendor/moto/shamu/proprietary/vendor/firmware/acdb.mbn:system/vendor/firmware/acdb.mbn \
+    vendor/moto/shamu/proprietary/vendor/firmware/cy8c20247_24lkxi.hex:system/vendor/firmware/cy8c20247_24lkxi.hex \
     vendor/moto/shamu/proprietary/vendor/firmware/left.boost.music.config:system/vendor/firmware/left.boost.music.config \
     vendor/moto/shamu/proprietary/vendor/firmware/left.boost.music.eq:system/vendor/firmware/left.boost.music.eq \
     vendor/moto/shamu/proprietary/vendor/firmware/left.boost_music_table.preset:system/vendor/firmware/left.boost_music_table.preset \
@@ -145,6 +146,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so \
     vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
     vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx214_cpp.so:system/vendor/lib/libchromatix_imx214_cpp.so \
+    vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx214_cpp_snap.so:system/vendor/lib/libchromatix_imx214_cpp_snap.so \
     vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
     vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx214_hfr_120.so:system/vendor/lib/libchromatix_imx214_hfr_120.so \
     vendor/moto/shamu/proprietary/vendor/lib/libchromatix_imx214_hfr_60.so:system/vendor/lib/libchromatix_imx214_hfr_60.so \
@@ -243,8 +245,9 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/bin/ramdump:system/bin/ramdump \
     vendor/moto/shamu/proprietary/bin/rundiag:system/bin/rundiag \
     vendor/moto/shamu/proprietary/bin/test_diag:system/bin/test_diag \
-    vendor/moto/shamu/proprietary/etc/diag/FIT_V12.cfg:system/etc/diag/FIT_V12.cfg \
-    vendor/moto/shamu/proprietary/etc/diag/mdm/FIT_V12.cfg:system/etc/diag/mdm/FIT_V12.cfg \
+    vendor/moto/shamu/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
+    vendor/moto/shamu/proprietary/etc/diag/mdm/FIT_V15_audio.cfg:system/etc/diag/mdm/FIT_V15_audio.cfg \
+    vendor/moto/shamu/proprietary/etc/diag/mdm/FIT_V15.cfg:system/etc/diag/mdm/FIT_V15.cfg \
     vendor/moto/shamu/proprietary/etc/diag/mdm/sensors_qxdm.cfg:system/etc/diag/mdm/sensors_qxdm.cfg \
     vendor/moto/shamu/proprietary/etc/diag/sensors_qxdm.cfg:system/etc/diag/sensors_qxdm.cfg \
     vendor/moto/shamu/proprietary/etc/diag/audio_voice_apr.cfg:system/etc/diag/audio_voice_apr.cfg \
@@ -288,12 +291,10 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/firmware/a420_pfp.fw:system/vendor/firmware/a420_pfp.fw \
     vendor/moto/shamu/proprietary/vendor/firmware/a420_pm4.fw:system/vendor/firmware/a420_pm4.fw \
     vendor/moto/shamu/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/moto/shamu/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/moto/shamu/proprietary/lib/hw/gps.msm8084.so:system/lib/hw/gps.msm8084.so \
     vendor/moto/shamu/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/moto/shamu/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/moto/shamu/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/moto/shamu/proprietary/vendor/bin/gsiff_daemon:system/vendor/bin/gsiff_daemon \
     vendor/moto/shamu/proprietary/vendor/lib/hw/activity_recognition.msm8084.so:system/vendor/lib/hw/activity_recognition.msm8084.so \
     vendor/moto/shamu/proprietary/vendor/lib/hw/flp.msm8084.so:system/vendor/lib/hw/flp.msm8084.so \
     vendor/moto/shamu/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -325,6 +326,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/moto/shamu/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/moto/shamu/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/moto/shamu/proprietary/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so \
     vendor/moto/shamu/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/moto/shamu/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/moto/shamu/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
@@ -346,7 +348,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/bin/radish:system/bin/radish \
     vendor/moto/shamu/proprietary/bin/tcmd_mini:system/bin/tcmd_mini \
     vendor/moto/shamu/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
-    vendor/moto/shamu/proprietary/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml \
     vendor/moto/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/moto/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     vendor/moto/shamu/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
@@ -368,7 +369,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/moto/shamu/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/moto/shamu/proprietary/vendor/firmware/atmel-a432-14061601-0102aa-shamu-p1.tdat:system/vendor/firmware/atmel-a432-14061601-0102aa-shamu-p1.tdat \
-    vendor/moto/shamu/proprietary/vendor/firmware/atmel-a432-14101503-0103aa-shamu.tdat:system/vendor/firmware/atmel-a432-14101503-0103aa-shamu.tdat \
+    vendor/moto/shamu/proprietary/vendor/firmware/atmel-a432-14103001-0103aa-shamu.tdat:system/vendor/firmware/atmel-a432-14103001-0103aa-shamu.tdat \
     vendor/moto/shamu/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/moto/shamu/proprietary/bin/usbhub:system/bin/usbhub \
     vendor/moto/shamu/proprietary/bin/usbhub_init:system/bin/usbhub_init \
@@ -393,6 +394,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/etc/firmware/vpu.b12:system/etc/firmware/vpu.b12 \
     vendor/moto/shamu/proprietary/etc/firmware/vpu.mbn:system/etc/firmware/vpu.mbn \
     vendor/moto/shamu/proprietary/etc/firmware/vpu.mdt:system/etc/firmware/vpu.mdt \
+    vendor/moto/shamu/proprietary/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml \
     vendor/moto/shamu/proprietary/lib/librecoglib.so:system/lib/librecoglib.so \
     vendor/moto/shamu/proprietary/lib/libsupermodel.so:system/lib/libsupermodel.so \
     vendor/moto/shamu/proprietary/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so \
