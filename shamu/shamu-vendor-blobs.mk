@@ -390,6 +390,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/bin/usbhub_init:system/bin/usbhub_init \
     vendor/moto/shamu/proprietary/etc/permissions/com.motorola.DirectedSMSProxy.xml:system/etc/permissions/com.motorola.DirectedSMSProxy.xml \
     vendor/moto/shamu/proprietary/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
+    vendor/moto/shamu/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/moto/shamu/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
     vendor/moto/shamu/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
     vendor/moto/shamu/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
